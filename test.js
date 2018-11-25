@@ -1,0 +1,37 @@
+import test from 'ava';
+import m from './';
+
+test('brainfuck', async t => {
+	t.is((await m('++++++++[>++++[>++>+++>+++>+<<<<-]n>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++')), 'Hello World!');
+});
+test('brainfuck with timeout', async t => {
+	t.is((await m('++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++', {timeout: 8000})), 'Hello World!');
+});
+
+test('ook!', async t => {
+	t.is((await m('Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook? Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook? Ook! Ook! Ook? Ook! Ook? Ook. Ook! Ook. Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook? Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook? Ook! Ook! Ook? Ook! Ook? Ook. Ook. Ook. Ook! Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook. Ook! Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook. Ook. Ook? Ook. Ook? Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook? Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook? Ook! Ook! Ook? Ook! Ook? Ook. Ook! Ook. Ook. Ook? Ook. Ook? Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook? Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook? Ook! Ook! Ook? Ook! Ook? Ook. Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook. Ook? Ook. Ook? Ook. Ook? Ook. Ook? Ook. Ook! Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook. Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook. Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook. Ook. Ook? Ook. Ook? Ook. Ook. Ook! Ook.')), 'Hello World!');
+});
+test('ook! with timeout', async t => {
+	t.is((await m('Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook? Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook? Ook! Ook! Ook? Ook! Ook? Ook. Ook! Ook. Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook? Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook? Ook! Ook! Ook? Ook! Ook? Ook. Ook. Ook. Ook! Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook. Ook! Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook. Ook. Ook? Ook. Ook? Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook? Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook? Ook! Ook! Ook? Ook! Ook? Ook. Ook! Ook. Ook. Ook? Ook. Ook? Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook? Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook? Ook! Ook! Ook? Ook! Ook? Ook. Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook. Ook? Ook. Ook? Ook. Ook? Ook. Ook? Ook. Ook! Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook. Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook. Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook. Ook. Ook? Ook. Ook? Ook. Ook. Ook! Ook.', {timeout: 8000})), 'Hello World!');
+});
+
+test('pikalang', async t => {
+	t.is((await m('pi pi pi pi pi pi pi pi pi pi pika pipi pi pi pi pi pi pi pi pipi pi pi pi pi pi pi pi pi pi pi pipi pi pi pi pipi pi pichu pichu pichu pichu ka chu pipi pi pi pikachu pipi pi pikachu pi pi pi pi pi pi pi pikachu pikachu pi pi pi pikachu pipi pi pi pikachu pichu pichu pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pikachu pipi pikachu pi pi pi pikachu ka ka ka ka ka ka pikachu ka ka ka ka ka ka ka ka pikachu pipi pi pikachu pipi')), 'Hello World!');
+});
+test('pikalang with timeout', async t => {
+	t.is((await m('pi pi pi pi pi pi pi pi pi pi pika pipi pi pi pi pi pi pi pi pipi pi pi pi pi pi pi pi pi pi pi pipi pi pi pi pipi pi pichu pichu pichu pichu ka chu pipi pi pi pikachu pipi pi pikachu pi pi pi pi pi pi pi pikachu pikachu pi pi pi pikachu pipi pi pi pikachu pichu pichu pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pikachu pipi pikachu pi pi pi pikachu ka ka ka ka ka ka pikachu ka ka ka ka ka ka ka ka pikachu pipi pi pikachu pipi', {timeout: 8000})), 'Hello World!');
+});
+
+test('solbofuck', async t => {
+	t.is((await m('ROCK SOLBO BWEEEE BWEEEE BWEEEE BWEEEE BWEEEE BWEEEE BWEEEE BWEEEE BWEEEEEEEE BWEE BWEEEE BWEEEE BWEEEE BWEEEE BWEEEEEEEE BWEE BWEEEE BWEEEE BWEE BWEEEE BWEEEE BWEEEE BWEE BWEEEE BWEEEE BWEEEE BWEE BWEEEE BWEEE BWEEE BWEEE BWEEE BWEEEEE BWEEEEEEEEE BWEE BWEEEE BWEE BWEEEE BWEE BWEEEEE BWEE BWEE BWEEEE BWEEEEEEEE BWEEE BWEEEEEEEEE BWEEE BWEEEEE BWEEEEEEEEE BWEE BWEE BWEEEEEE BWEE BWEEEEE BWEEEEE BWEEEEE BWEEEEEE BWEEEE BWEEEE BWEEEE BWEEEE BWEEEE BWEEEE BWEEEE BWEEEEEE BWEEEEEE BWEEEE BWEEEE BWEEEE BWEEEEEE BWEE BWEE BWEEEEEE BWEEE BWEEEEE BWEEEEEE BWEEE BWEEEEEE BWEEEE BWEEEE BWEEEE BWEEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEEE BWEE BWEE BWEEEE BWEEEEEE BWEE BWEEEE BWEEEE')), 'Hello World!');
+});
+test('solbofuck with timeout', async t => {
+	t.is((await m('ROCK SOLBO BWEEEE BWEEEE BWEEEE BWEEEE BWEEEE BWEEEE BWEEEE BWEEEE BWEEEEEEEE BWEE BWEEEE BWEEEE BWEEEE BWEEEE BWEEEEEEEE BWEE BWEEEE BWEEEE BWEE BWEEEE BWEEEE BWEEEE BWEE BWEEEE BWEEEE BWEEEE BWEE BWEEEE BWEEE BWEEE BWEEE BWEEE BWEEEEE BWEEEEEEEEE BWEE BWEEEE BWEE BWEEEE BWEE BWEEEEE BWEE BWEE BWEEEE BWEEEEEEEE BWEEE BWEEEEEEEEE BWEEE BWEEEEE BWEEEEEEEEE BWEE BWEE BWEEEEEE BWEE BWEEEEE BWEEEEE BWEEEEE BWEEEEEE BWEEEE BWEEEE BWEEEE BWEEEE BWEEEE BWEEEE BWEEEE BWEEEEEE BWEEEEEE BWEEEE BWEEEE BWEEEE BWEEEEEE BWEE BWEE BWEEEEEE BWEEE BWEEEEE BWEEEEEE BWEEE BWEEEEEE BWEEEE BWEEEE BWEEEE BWEEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEE BWEEEEEE BWEE BWEE BWEEEE BWEEEEEE BWEE BWEEEE BWEEEE', {timeout: 8000})), 'Hello World!');
+});
+
+test('triplet', async t => {
+	t.is((await m('001 111 111 111 111 111 111 111 111 111 110 100 111 111 111 111 111 111 111 111 001 000 011 100 010 001 111 111 111 111 111 111 111 110 100 111 111 111 111 001 000 011 100 111 010 111 111 111 111 111 111 111 010 010 111 111 111 010 001 001 001 111 111 111 111 111 111 111 111 110 100 111 111 111 111 001 000 011 100 010 001 001 001 111 111 111 111 111 111 111 111 111 111 110 100 111 111 111 111 111 111 111 111 111 001 000 011 100 000 000 000 010 100 100 100 100 010 111 111 111 010 000 000 000 000 000 000 010 000 000 000 000 000 000 000 000 010 001 001 111 010')), 'Hello World!');
+});
+test('triplet with timeout', async t => {
+	t.is((await m('001 111 111 111 111 111 111 111 111 111 110 100 111 111 111 111 111 111 111 111 001 000 011 100 010 001 111 111 111 111 111 111 111 110 100 111 111 111 111 001 000 011 100 111 010 111 111 111 111 111 111 111 010 010 111 111 111 010 001 001 001 111 111 111 111 111 111 111 111 110 100 111 111 111 111 001 000 011 100 010 001 001 001 111 111 111 111 111 111 111 111 111 111 110 100 111 111 111 111 111 111 111 111 111 001 000 011 100 000 000 000 010 100 100 100 100 010 111 111 111 010 000 000 000 000 000 000 010 000 000 000 000 000 000 000 000 010 001 001 111 010', {timeout: 8000})), 'Hello World!');
+});
