@@ -61,7 +61,9 @@ function interpret (text) {
 	const bfCommands = esotericCommands['brainfuck'];
 
 	var bf = '';
-	if (detectedLang !== 'brainfuck') {
+	if (detectedLang.includes('does not correspond to any of our supported essoteric languages')) {
+		return detectedLang
+	} else if (detectedLang !== 'brainfuck') {
 		for (const i in parsedArray) {
 			const command = parsedArray[i];
 			bf += bfCommands[detectedLangCommands.indexOf(command)];
