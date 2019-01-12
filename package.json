@@ -1,6 +1,6 @@
 {
   "name": "esolangs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Detect and execute esoteric programming language code.",
   "license": "MIT",
   "repository": "k4m4/esolangs",
