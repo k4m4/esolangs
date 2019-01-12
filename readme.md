@@ -20,8 +20,8 @@ esolangs('++++++++++[>+>+++>+++++++>++++++++++<<<<-]>>>>---.+++.+++++++++.----.+
     //=> 'admin'
 });
 
-esolangs('pi pi pi pi pi pi pi pi pi pi pika pipi pi pipi pi pi pi pipi pi pi pi pi pi pi pi pipi pi pi pi pi pi pi pi pi pi pi pichu pichu pichu pichu ka chu pipi pipi pipi pipi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pikachu ka ka ka ka ka ka ka pikachu ka ka ka ka ka pikachu ka ka ka ka ka ka pikachu pi pi pi pi pi pi pi pi pi pi pi pi pikachu pi pi pi pikachu ka ka ka ka pikachu').then(plaintext => {
-    console.log(plaintext);
+esolangs('pi pi pi pi pi pi pi pi pi pi pika pipi pi pipi pi pi pi pipi pi pi pi pi pi pi pi pipi pi pi pi pi pi pi pi pi pi pi pichu pichu pichu pichu ka chu pipi pipi pipi pipi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pikachu ka ka ka ka ka ka ka pikachu ka ka ka ka ka pikachu ka ka ka ka ka ka pikachu pi pi pi pi pi pi pi pi pi pi pi pi pikachu pi pi pi pikachu ka ka ka ka pikachu').then(response => {
+    console.log(response);
     //=> 'unicorn'
 });
 
