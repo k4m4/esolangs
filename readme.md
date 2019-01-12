@@ -1,6 +1,6 @@
 # esolangs [![Build Status](https://travis-ci.org/k4m4/esolangs.svg?branch=master)](https://travis-ci.org/k4m4/esolangs)
 
-> Detect and execute esoteric programming languages.
+> Detect and execute esoteric programming language code.
 
 
 ## Install
@@ -56,10 +56,10 @@ Timeout in milliseconds after which a request is considered failed. Default: `50
 ## Supported Esoteric Programming Languages
 
 - [`brainf*ck`](https://esolangs.org/wiki/brainfuck)
-- ['ook!'](https://esolangs.org/wiki/ook!)
-- ['pikalang'](https://esolangs.org/wiki/pikalang)
-- ['solbofuck'](https://esolangs.org/wiki/solbofuck)
-- ['triplet'](https://esolangs.org/wiki/triplet)
+- [`ook!`](https://esolangs.org/wiki/ook!)
+- [`pikalang`](https://esolangs.org/wiki/pikalang)
+- [`solbofuck`](https://esolangs.org/wiki/solbofuck)
+- [`triplet`](https://esolangs.org/wiki/triplet)
 
 
 ## Related

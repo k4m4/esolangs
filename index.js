@@ -16,12 +16,12 @@ const esotericRegExps = {
 };
 
 const esotericCommands = {
-    'ook!': ["Ook. Ook.", "Ook! Ook!", "Ook. Ook?", "Ook? Ook.", "Ook! Ook?", "Ook? Ook!", "Ook! Ook.", "Ook. Ook!"],
-    'pikalang': ["pi", "ka", "pipi", "pichu", "pika", "chu", "pikachu", "pikapi"],
-    'solbofuck': ["BWEEEE", "BWEEEEE", "BWEE", "BWEEE", "BWEEEEEEEE", "BWEEEEEEEEE", "BWEEEEEE", "BWEEEEEEE"],
-    'triplet': ["111", "000", "001", "100", "110", "011", "010", "101"],
-	// 'pogaack': ["pogaaack!", "poock!", "pogack!", "pogaack!", "pogack? ", "pogaack?", "pogaaack?", "poock?"], // 9th command is 'pock!'
-	'brainfuck': ["+", "-", ">", "<", "[", "]", ".", ","]
+    'ook!': ['Ook. Ook.', 'Ook! Ook!', 'Ook. Ook?', 'Ook? Ook.', 'Ook! Ook?', 'Ook? Ook!', 'Ook! Ook.', 'Ook. Ook!'],
+    'pikalang': ['pi', 'ka', 'pipi', 'pichu', 'pika', 'chu', 'pikachu', 'pikapi'],
+    'solbofuck': ['BWEEEE', 'BWEEEEE', 'BWEE', 'BWEEE', 'BWEEEEEEEE', 'BWEEEEEEEEE', 'BWEEEEEE', 'BWEEEEEEE'],
+    'triplet': ['111', '000', '001', '100', '110', '011', '010', '101'],
+	// 'pogaack': ['pogaaack!', 'poock!', 'pogack!', 'pogaack!', 'pogack? ', 'pogaack?', 'pogaaack?', 'poock?'], // 9th command is 'pock!'
+	'brainfuck': ['+', '-', '>', '<', '[', ']', '.', ',']
 };
 
 function detectLang (text) {
@@ -38,7 +38,7 @@ function detectLang (text) {
 	if (detectedLang.length > 1) {
 		return detectedLang;
 	} else {
-		return "Code does not correspond to any of our supported essoteric languages";
+		return 'Code does not correspond to any of our supported essoteric languages';
 	}
 }
 
