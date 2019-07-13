@@ -25,7 +25,7 @@
     "index.js"
   ],
   "devDependencies": {
-    "ava": "*"
+    "ava": "^2.2.0"
   },
   "dependencies": {
     "arrify": "^1.0.1",
